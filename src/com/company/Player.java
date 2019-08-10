@@ -41,6 +41,11 @@ public class Player extends FootballTeam{
         this.college = college;
     }
 
+    @Override
+    public void interview() {
+        System.out.println("Gave an interview.");
+    }
+
     public void playMatch(){
         System.out.println("Playing.");
     }

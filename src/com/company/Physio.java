@@ -21,6 +21,11 @@ public class Physio extends FootballTeam{
         this.university = university;
     }
 
+    @Override
+    public void interview() {
+        System.out.println("Is not allowed to do interviews. ");
+    }
+
     public void giveMassage(){
         System.out.println("Working");
     }

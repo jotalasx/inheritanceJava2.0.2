@@ -1,6 +1,6 @@
 package com.company;
 
-public class FootballTeam {
+public abstract class FootballTeam {
 
     protected String name;
     protected String surname;
@@ -43,4 +43,6 @@ public class FootballTeam {
     public void travel(){
         System.out.println("Travelling.");
     }
+
+    public abstract void interview();
 }

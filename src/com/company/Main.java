@@ -33,5 +33,30 @@ public class Main {
         // Who's taking care of players
         System.out.println(physio1.getName() + " " + physio1.getSurname() + " : ");
         physio1.giveMassage();
+
+        // No se puede instanciar una clase abstracta!
+        // FootballTeam team1 = new FootballTeam();
+
+        // Al ser hijas de la clase padres, todas se pueden instanciar como "FootballTeam"
+        FootballTeam coach2 = new Coach("Matt", "Patricia", 44, 21, 298);
+        FootballTeam player2 = new Player("Julian", "Edelman", 33, 11, "WR", "California");
+        FootballTeam physio2 = new Physio("Manuel", "González", 49, "Oklahoma");
+
+        for (FootballTeam member : members){
+            System.out.println(member.getName() + " " + member.getSurname() + " : ");
+            member.interview();
+        }
+
+        // Who's playing
+        System.out.println(player2.getName() + " " + player2.getSurname() + " : ");
+        ((Player) player2).playMatch();
+
+        // Who's coaching
+        System.out.println(coach2.getName() + " " + coach2.getSurname() + " : ");
+        ((Coach) coach2).manageTeam();
+
+        // Who's taking care of players
+        System.out.println(physio2.getName() + " " + physio2.getSurname() + " : ");
+        ((Physio) physio2).giveMassage();
     }
 }

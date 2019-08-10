@@ -31,6 +31,11 @@ public class Coach extends FootballTeam{
         this.coachId = coachId;
     }
 
+    @Override
+    public void interview() {
+        System.out.println("Took part into an interview.");
+    }
+
     public void manageTeam(){
         System.out.println("Coaching.");
     }
