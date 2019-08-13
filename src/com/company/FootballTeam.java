@@ -1,6 +1,8 @@
 package com.company;
 
-public abstract class FootballTeam {
+public abstract class FootballTeam implements TeamDuties{
+    // En este caso al ser una clase abstracta las podemos implementar ahi (si queremos)
+    // o en las clases hijas (obligatoriamente sino las implementamos en la clase padre)
 
     protected String name;
     protected String surname;
@@ -45,4 +47,12 @@ public abstract class FootballTeam {
     }
 
     public abstract void interview();
+
+    public void brandCommitment(){
+        System.out.println("Obligation.");
+    }
+
+    public void charityEvents(){
+        System.out.println("Helping Others.");
+    }
 }

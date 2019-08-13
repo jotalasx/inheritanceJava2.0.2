@@ -49,4 +49,14 @@ public class Player extends FootballTeam{
     public void playMatch(){
         System.out.println("Playing.");
     }
+
+    @Override
+    public void brandCommitment() {
+
+    }
+
+    @Override
+    public void charityEvents() {
+
+    }
 }

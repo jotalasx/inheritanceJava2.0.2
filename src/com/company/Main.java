@@ -54,6 +54,7 @@ public class Main {
         // Who's coaching
         System.out.println(coach2.getName() + " " + coach2.getSurname() + " : ");
         ((Coach) coach2).manageTeam();
+        coach2.brandCommitment();
 
         // Who's taking care of players
         System.out.println(physio2.getName() + " " + physio2.getSurname() + " : ");

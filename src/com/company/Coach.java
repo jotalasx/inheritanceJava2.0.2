@@ -39,4 +39,9 @@ public class Coach extends FootballTeam{
     public void manageTeam(){
         System.out.println("Coaching.");
     }
+
+    @Override
+    public void charityEvents() {
+
+    }
 }
